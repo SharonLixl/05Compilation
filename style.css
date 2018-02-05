@@ -1,0 +1,123 @@
+body{
+  display: block;
+}
+
+#blockHolder{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+#block{
+  width: 20vw;
+  height: 20vw;
+  z-index: 5;
+}
+
+
+#diceHolder{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+#dice{
+  width: 20vw;
+  height: 20vw;
+  border-radius: 1.5vw;
+  background-color: rgb(50,50,50);
+
+
+}
+
+#block div{
+   z-index: 10;
+   width: 20vw;
+   height: 20vw;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   display: none;
+}
+
+#titleHolder{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+#titleHolder div{
+  font-size: 5em;
+  color: rgb(200,200,200);
+  text-align: center;
+  text-decoration: underline;
+  display: none;
+  position: relative;
+  bottom: 14vw;
+}
+
+#block div:first-child{
+  background-image: url('dice/1.png');
+}
+
+#block div:nth-child(2){
+  background-image: url('dice/2.png');
+}
+
+#block div:nth-child(3){
+  background-image: url('dice/3.png');
+}
+
+#block div:nth-child(4){
+  background-image: url('dice/4.png');
+}
+
+
+#block div:nth-child(5){
+  background-image: url('dice/5.png');
+}
+
+.rotate{
+  animation: rotate 0.5s linear infinite;
+}
+
+.blinkin{
+  animation: blinkin 2s linear infinite;
+}
+
+
+@keyframes rotate{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes blinkin {
+	0%{
+		opacity: 1;
+	}
+	50%{
+		opacity: 0.5;
+	}
+}
