@@ -2,6 +2,29 @@ body{
   display: block;
 }
 
+#tryYourLuck{
+  position:fixed;
+  top: 0;
+  left: 10px;
+  transform: rotate(90deg);
+  transform-origin: bottom left;
+  font-size: 5em;
+  opacity: 0.3;
+  font-family: 'Indie Flower', cursive;
+}
+
+#tryYourLuck2{
+  position:fixed;
+  top: 0;
+  right: 10px;
+  /* left: 0; */
+  transform: rotate(-90deg);
+  transform-origin: bottom right;
+  font-size: 5em;
+  opacity: 0.3;
+  font-family: 'Indie Flower', cursive;
+}
+
 #blockHolder{
   width: 100vw;
   height: 100vh;
@@ -66,12 +89,12 @@ body{
 
 #titleHolder div{
   font-size: 5em;
-  color: rgb(200,200,200);
+  /* color: rgb(200,200,200); */
   text-align: center;
   text-decoration: underline;
   display: none;
   position: relative;
-  bottom: 14vw;
+  bottom: 18vw;
 }
 
 #block div:first-child{

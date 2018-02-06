@@ -22,6 +22,7 @@ $(document).ready(function(){
     console.log(diceIndex);
     $('#block div:nth-child('+ index +')').show();
     $('#titleHolder div:nth-child('+ index +')').show();
+    $('#titleHolder div:nth-child('+ index +')').css({'color': 'rgb(' + red + ',' + green + ',' + blue + ')'});
 
 
   })
